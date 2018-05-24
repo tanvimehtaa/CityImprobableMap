@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Mapping Delhi</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='dh_template_t.js'></script>
+    <link href='dh_template_t.css' rel='stylesheet' />
+</head>
+<body>
+
+
+
+<!-- DO NOT TOUCH!-->
+<div id='map'></div>
+
+<!-- INFOBOX - Comment out to delete --> -->
+<div class='map-overlay' id='infobox'><h3>Infobox</h3><div id='pd'><p>Hover over an area </p>  </div></div>
+
+<!-- LEGEND - Comment out to delete -->
+<div class='map-overlay' id='legend'><h3>Legend</h3></div>
+
+<!-- TOGGLE MENU - Comment out to delete -->
+<nav id="menu"></nav>
+
+
+<!--TIMELINE SLIDER - Comment out to delete -->
+<!-- <div id='console'>
+  <h3>Timeline for Dates</h3>
+  <p>add some more text here</p>
+  <div class='session1' id='sliderbar'>
+  <h5>Year: <label id='active-hour'>1526</label></h5>
+  <input id='slider2' class='row' type='range' min='1635' max='2000' step='1' value='1500' />
+</div>
+</div> -->
+<!--END TIMELINE SLIDER: DO NOT COMMENT BEYOND THIS POINT-->
+
+
+<!--OPACITY SLIDER - COMMENT OUT TO DELETE-->
+<!-- <div class='map-overlay2 top'>
+    <div class='map-overlay-inner'>
+        <label><h3>Layer opacity: <span id='slider-value'>100%</span></h3></label>
+        <input id='slider1' type='range' min='0' max='100' step='0' value='100' />
+    </div>
+</div> -->
+<!--OPACITY SLIDER END: DO NOT COMMENT BEYOND THIS POINT
+
+
+<!--SLIDESHOW - DO NOT COMMENT OUT-->
+<!--This is where you add all your text-->
+<div id='features'>
+    <section id='part-1' class='active'>
+        <h3><center>Thick Mapping: City Improbable</center></h3>
+        <p><center>Representations of Delhi by Language in <i> City Improbable </i> </center> </p>
+      </section>
+        <section id='part-2'>
+            <h3>About</h3>
+
+            <p>This map looks at the different languages in which the spaces of Delhi have been imagined in Khushwant Singh's <i>City Improbable</i>. Each polygon is an area mentioned in one of the short stories in the anthology, and is color coded according to the original language of its publication. To view the city in terms of the languages it has been represented in raises interesting questions - who is inhabiting the city? Who is allowed to write about it, and for whom? The linguistic changes in representation reflect the politics of the time and to see the layers stack up paints a multicultural, heterogeneous picture of the city and its history. Scroll through the different views and click the corresponding toggle boxes to see the full progression of Delhi's linguistic growth in the book.</p>
+        </section>
+        <section id='part-3'>
+            <h3>View 1: Old Delhi/Mughal Empire (1600-1800)</h3>
+
+            <p>With the entry of the Mughals into Delhi in the 16th Century, the first texts about the city began to be published in Persian - the official language of the empire. It is interesting to note that the language of the elite class was actually Urdu, but since the literature available is mainly official military and administrative documents, the predominance of Persian writing seems fitting. Delhi of the 17th and 18th centuries was characterized by a fusion of Persian and Indian art, cuisine, and architecture, Islamic education, and trade with the Arab and Turkic lands. It was at this time that Old Delhi was established as a cultural focal point. Stay on this view and experiment with the toggle buttons to see the part it played in the growth of the city with each passing era. </p>
+        </section>
+        <section id='part-4'>
+            <h3>View 2: British Raj (1800-1900)</h3>
+
+            <p>The official entry of the British in 1858 followed their gradual acknowledgment of Delhi (as a synechdoche for India) as an area of interest. With the establishment of the East India Company in 1757, texts in English began to be written about the city over the next 200 years as the British re-wrote the country into its territorial consciousness. After the 1857 Revolt - the first major struggle for Independence - Urdu, too, appeared in texts, as publication and thus, self-representation became accessible to the Indian population.</p>
+           <!-- <img src="http://m.memegen.com/h2p1vx.jpg" width=95%> -->
+        </section>
+        <section id='part-5'>
+            <h3>View 3: Independence Movement (1900-1950)</h3>
+
+            <p>While the Independence movement began far before 1900, textual evidence of it only appears around this time as economic and institutional power began to shift towards the Indian population. Nationalist texts were mainly published in Hindi, which quickly became a symbol for the movement as separatist tendencies between India and Pakistan emerged, and Urdu was designated to the latter. </p>
+        </section>
+        <section id='part-6'>
+            <h3>View 4: Globalization (1950-2000)</h3>
+
+            <p>As post-Independence India began to establish its international presence, more texts began to be published in English. This was aided by the move to liberalization in the 1990s and increasing global trade of information and material. The area covered by texts also increases significantly as representation becomes more accessible, allowing a larger, more economically and culturally diverse section of the population write, get published and be read. </p>
+        </section>
+        <section id='part-7'>
+            <h3>The End</h3>
+
+            <p> The growth of Delhi as a cultural and political center can be seen best in the many languages that layer Old Delhi - which remained an important part of the city to all its entrants. The array of languages that fill the map over time undermines any one reading of it - it is an amalgam of culture and politics that wove in and out, and left Delhi in their trail. </p>
+    </section>
+</div>
+
+</body>
+</html>
